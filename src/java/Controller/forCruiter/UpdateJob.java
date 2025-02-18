@@ -92,7 +92,7 @@ public class UpdateJob extends HttpServlet {
             jDAO.update(job, jobId);
             request.getRequestDispatcher("listJobRecruiter").forward(request, response);
         } catch (NumberFormatException e) {
-            System.out.println(e);
+            System.out.println(e);  
         }
     }
 
